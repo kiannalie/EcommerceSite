@@ -14,4 +14,4 @@ export default class SignIn extends Component {
 
 SignIn = reduxForm({
     form : 'SignIn'
-})(SignIn)
+})(SignIn);
