@@ -3,10 +3,14 @@ import React, { Component } from 'react';
 import SignInForm from './signInForm';
 
 class SignIn extends Component {
+
+    onSubmit= (feilds) => {
+        console.log(feilds);
+    }
     render() {
         return (
             <div className='sign-in'>
-                <SignInForm className='sign-in__form' />
+                <SignInForm onSubmit={this.onSubmit} className='sign-in__form' />
             </div>
         )
     }
